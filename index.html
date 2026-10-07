@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio académico de un estudiante de preparatoria apasionado por el dibujo técnico, la física, las matemáticas y la Ingeniería Civil.">
+  <title>Portafolio Académico — Futuro Ingeniero Civil</title>
+
+  <!-- Google Fonts con display=swap para optimizar la carga -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos modulares -->
+  <link rel="stylesheet" href="css/00-reset.css">
+  <link rel="stylesheet" href="css/01-variables.css">
+  <link rel="stylesheet" href="css/02-tipografia.css">
+  <link rel="stylesheet" href="css/03-layout.css">
+  <link rel="stylesheet" href="css/04-componentes.css">
+  <link rel="stylesheet" href="css/05-utilidades.css">
+  <link rel="stylesheet" href="css/06-responsive.css">
+</head>
+<body>
+
+  <!-- Accesibilidad: Saltador al contenido principal -->
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="logo">CivilDev</a>
+      
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+          <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+          <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button id="dark-mode-toggle" class="btn-theme" aria-label="Cambiar tema de color">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO / INICIO -->
+    <section id="hero" class="hero">
+      <div class="hero__content">
+        <h1>Hola, soy <span class="text-highlight">Hernandez Roman Matias</span></h1>
+        <p class="hero__subtitle">Estudiante de preparatoria y aspirante a Ingeniería Civil. Apasionado por las ciencias exactas, el diseño de estructuras y la tecnología web.</p>
+        <div class="hero__actions">
+          <a href="#proyectos" class="btn btn--primary">Ver Proyectos</a>
+          <a href="#contacto" class="btn btn--secondary">Contactar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="section">
+      <h2 class="section__title">Sobre mí</h2>
+      <div class="about__grid">
+        <p>Actualmente me encuentro cursando la preparatoria y preparando mi camino universitario hacia la <strong>Ingeniería Civil</strong>. Me fascina entender cómo funcionan las estructuras en el mundo real a través de las matemáticas y la física.</p>
+        <p>Disfruto combinar el dibujo técnico detallado con la precisión del desarrollo web para plasmar proyectos, planos y soluciones lógicas de forma clara y accesible.</p>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section">
+      <h2 class="section__title">Proyectos Destacados</h2>
+      <div class="projects__grid">
+        
+        <article class="card">
+          <div class="card__body">
+            <h3>Calculadora de Vectores y Física</h3>
+            <p>Herramienta web interactiva para calcular sumas de vectores y problemas de cinemática básica para clase de Física.</p>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS Grid</li>
+              <li>JavaScript</li>
+            </ul>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-ext">Ver en GitHub &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__body">
+            <h3>Galería de Planos ACOTADOS</h3>
+            <p>Portafolio digital con láminas de dibujo técnico, vistas ortogonales e isométricos digitalizados en alta resolución.</p>
+            <ul class="tags">
+              <li>Dibujo Técnico</li>
+              <li>CSS Variables</li>
+              <li>A11y</li>
+            </ul>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-ext">Ver en GitHub &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__body">
+            <h3>Simulador de Cargas Estáticas</h3>
+            <p>Página web demostrativa sobre la distribución de fuerzas y equilibrio en puentes de palitos de madera.</p>
+            <ul class="tags">
+              <li>Matemáticas</li>
+              <li>Mobile-First</li>
+              <li>Clean Code</li>
+            </ul>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-ext">Ver en GitHub &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section">
+      <h2 class="section__title">Áreas de Interés y Habilidades</h2>
+      <div class="skills__grid">
+        <div class="skill-box">
+          <h3>Ciencias Exactas</h3>
+          <p>Matemáticas (Álgebra, Trigonometría), Física (Estática y Dinámica), Lógica cuantitativa.</p>
+        </div>
+        <div class="skill-box">
+          <h3>Dibujo & Diseño</h3>
+          <p>Dibujo Técnico, Geometría Descriptiva, Escalas, Vistas Isométricas, Nociones de AutoCAD.</p>
+        </div>
+        <div class="skill-box">
+          <h3>Tecnología Web</h3>
+          <p>HTML5 Semántico, CSS3 Responsive, JavaScript Vanilla, Control de versiones con Git.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXTRA / ASIDE -->
+    <aside class="section section--aside">
+      <h3>📐 Mi Meta Profesional</h3>
+      <p>"Mi objetivo es diseñar y construir infraestructura que transforme comunidades, combinando la rigurosidad de la ingeniería con tecnologías modernas."</p>
+    </aside>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+      <h2 class="section__title">Contacto</h2>
+      <form id="contact-form" class="form" novalidate>
+        <div class="form__group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <span class="error-msg" id="error-nombre" aria-live="polite"></span>
+        </div>
+
+        <div class="form__group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+          <span class="error-msg" id="error-email" aria-live="polite"></span>
+        </div>
+
+        <div class="form__group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          <span class="error-msg" id="error-mensaje" aria-live="polite"></span>
+        </div>
+
+        <button type="submit" class="btn btn--primary">Enviar Mensaje</button>
+        <div id="form-feedback" class="form__feedback" role="status"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Hernandez Roman Matias. Futuro Ingeniero Civil.</p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

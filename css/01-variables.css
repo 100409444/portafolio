@@ -1,0 +1,35 @@
+:root {
+  /* Paleta de Colores Neutros y Base */
+  --color-primario: hsl(220, 70%, 45%);
+  --color-fondo: hsl(0, 0%, 98%);
+  --color-superficie: hsl(0, 0%, 100%);
+  --color-texto: hsl(220, 15%, 20%);
+  --color-acento: hsl(180, 60%, 45%);
+  --color-borde: hsl(220, 15%, 85%);
+  --color-error: hsl(0, 70%, 45%);
+  --color-exito: hsl(140, 60%, 35%);
+
+  /* Tipografía */
+  --font-principal: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Espaciado */
+  --esp-1: 0.5rem;
+  --esp-2: 1rem;
+  --esp-3: 1.5rem;
+  --esp-4: 2rem;
+  --esp-5: 3rem;
+
+  /* Misceláneos */
+  --radio: 8px;
+  --sombra: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Modo Oscuro sobreescribiendo las Custom Properties */
+.dark {
+  --color-fondo: hsl(220, 15%, 12%);
+  --color-superficie: hsl(220, 15%, 18%);
+  --color-texto: hsl(0, 0%, 95%);
+  --color-borde: hsl(220, 15%, 30%);
+  --color-primario: hsl(220, 80%, 65%);
+}

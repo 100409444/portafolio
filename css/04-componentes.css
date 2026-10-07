@@ -1,0 +1,75 @@
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: var(--esp-2) var(--esp-3);
+  border-radius: var(--radio);
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--color-primario);
+  color: #fff;
+}
+
+.btn--secondary {
+  border-color: var(--color-primario);
+  color: var(--color-primario);
+}
+
+/* Tarjetas */
+.card, .skill-box {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  padding: var(--esp-3);
+  box-shadow: var(--sombra);
+}
+
+.tags {
+  display: flex;
+  gap: var(--esp-1);
+  list-style: none;
+  margin: var(--esp-2) 0;
+}
+
+.tags li {
+  background-color: var(--color-fondo);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+/* Formularios */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-3);
+  max-width: 600px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form input, .form textarea {
+  padding: var(--esp-2);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  background-color: var(--color-superficie);
+  color: var(--color-texto);
+}
+
+.form input:focus, .form textarea:focus {
+  outline: 2px solid var(--color-primario);
+}
+
+.error-msg {
+  color: var(--color-error);
+  font-size: 0.85rem;
+}
